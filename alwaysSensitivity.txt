@@ -1,0 +1,10 @@
+always @(a,b) begin
+  sum = a+b;
+end
+
+executes block always every time a or b change state. or 1 or 0.
+
+Block assignment
+ different from non-Blcking assignment
+
+a <= b;
