@@ -1,4 +1,4 @@
-module fsm_two_states (
+module edge_detect_mealy (
     input logic clk, rst,
     input logic in,
     output logic out
