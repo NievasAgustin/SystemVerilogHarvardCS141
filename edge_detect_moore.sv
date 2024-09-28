@@ -19,12 +19,13 @@ always_comb begin
     s1 :
       if (in)
         state_next = s2;
-    s2 :
+    s2 : begin
       out = 1'b1
       if (in)
         state_reg = s3;
     else
       state_reg = s1;
+    end
     s3 :
       if (~in)
         state_next = s1;
